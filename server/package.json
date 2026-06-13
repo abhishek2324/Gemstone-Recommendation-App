@@ -1,0 +1,31 @@
+{
+  "name": "gemstone-recommend-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Gemstone Recommendation System API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed/seeder.js",
+    "seed:clear": "node src/seed/seeder.js -d"
+  },
+  "keywords": [
+    "gemstone",
+    "recommendation",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.0",
+    "nodemon": "^3.1.14"
+  }
+}
